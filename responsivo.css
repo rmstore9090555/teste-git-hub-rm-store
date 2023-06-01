@@ -1,0 +1,239 @@
+/* Estilos para dispositivos móveis */
+@charset "UTF-8";
+
+@media screen and (min-width: 400px) and (max-width: 768px){ /*celular*/
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+      }
+      .search-box {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+      
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        width: 450px;
+      }
+
+   
+    .logo {
+    margin-left: 100px;
+    margin-right: auto;
+   
+  }
+  .logo-rm {
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 3px 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    transform: skew(-10deg);
+
+  }
+  .logo-store {
+    font-family: 'Staatliches', cursive;
+    font-size: 35px;
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 7px 3px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    list-style: none;
+    letter-spacing: 5px;
+    transform: skew(-10deg);
+}
+
+  .nav__login {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+
+  .nav__login a {
+    margin-right: 10px;
+    letter-spacing: px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav__login a:hover{
+    padding: 2px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  .nav__toggle {
+    display: block;
+    margin-top: -21%;
+    margin-left: 60px;
+    letter-spacing: 20px;
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px; /* Mudança: posicionar à esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0; /* Mudança: posicionar à esquerda */
+    width: 22%;
+    height: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    z-index: 9998;
+    transform: translateX(-100%); /* Mudança: traduzir para a esquerda */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu.active {
+    transform: translateX(0%);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding-top: 100px;
+  }
+  
+  .menu li {
+    margin-bottom: 30px;
+  }
+  
+  .menu a {
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    transform: skew(-10deg);
+  }
+  
+  .menu a:hover {
+    color: #fdfdfd;
+  }
+  
+  .nav__toggle {
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer-column {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column h3 {
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    font-size: 19px;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+@media screen and (min-width: 708px) and (max-width: 992px){ /*tablet*/
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+      }
+      .search-box {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+      
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        width: 450px;
+      }
+
+   
+    .logo {
+    margin-left: 5px;
+    margin-right: auto;
+   
+  }
+
+  .nav__login {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+
+  .nav__login a {
+    margin-right: 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav__login a:hover{
+    padding: 2px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  .nav__toggle {
+    display: block;
+    margin-top: -105px;
+    margin-left: 120px;
+  }
+
+  #menu nav {
+    display: none;
+  }
+  
+  #menu nav.active {
+    display: flex;
+  }
+}}

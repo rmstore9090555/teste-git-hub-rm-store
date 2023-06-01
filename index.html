@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>RM Store</title>
+</head>
+<body>
+  
+<header>
+    <div>
+        <nav class="navbar">
+            <a class="logo" href="#">
+              <span class="logo-rm">RM</span> 
+              <span class="logo-store">STORE</span>
+            </a>
+            <div class="nav__login">
+                <div class="nav__user">
+                    <a href="#" onclick="selectButton(event)"><i class='bx bx-user'></i></a>
+                </div>
+                <div class="nav__cart">
+                    <a href="#"  onclick="selectButton(event)"><i class='bx bxs-cart'></i></a>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="O que você está procurando ?">
+                <button type="submit">Buscar</button>
+            </div>
+        </nav>  
+        <div class="social__media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-pinterest-alt'></i></a>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#">PRODUTOS</a></li>
+              <li><a href="#">SUPORTE</a></li>
+            </ul>
+          </div>
+        </header>
+        <footer>
+
+            <div class="footer-content">
+              <div class="footer-column">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                  <li><a href="#">POLÍTICA DE PRIVACIDADE</a></li>
+                  <li><a href="#">POLÍTICA DE TROCAS E DEVOLUÇÕES</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3>HORÁRIO DE ATENDIMENTO</h3>
+                <ul>
+                  <li><a href="#">SEGUNDA Á SEXTA </a></li>
+                  <li><a href="#">DAS 9H ÀS 18H</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>CONTATO</h3>
+                <ul>
+                  <li><a href="#"> </a></li>
+                  <li><a href="#">TELEFONE (11)909090 </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy;Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </footer>
+        
+    
+<script>
+function selectButton(event) {
+    const buttons = document.getElementsByClassName('nav-link');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('selected');
+    }
+    event.target.classList.add('selected');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', function() {
+    menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+});
+
+</script>
+
+
+</body>
+</html>
